@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::redirect('/', 'inicio-de-sesion', 301);
 
-Route::get('inicio-de-sesion', 'Web\LoginController@index')->name('login');
+Route::get('inicio-de-sesion', 'Web\LoginController@index')->name('login-sesion');
 
