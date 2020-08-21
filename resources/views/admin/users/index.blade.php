@@ -14,12 +14,14 @@
   <link rel="stylesheet" href="{{ asset('admin/vendor/font-awesome/all.min.css') }}" type="text/css">
   <!-- Page plugins -->
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="{{ asset('admin/css/1.css') }}" type="text/css">
 </head>
 
 <body>
+
     @include('admin.users.navbar')
     @include('admin.users.content')
 
@@ -48,8 +50,10 @@
     <script src="{{ asset('admin/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('admin/vendor/maskedinput/maskedinput.js') }}"></script>
 
-
-
-
+    <script>
+        $(document).ready(function() {
+            $('#users').DataTable();
+        } );
+    </script>
 </body>
 </html>
