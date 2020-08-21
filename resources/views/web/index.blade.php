@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Prueba De Superacion">
   <meta name="author" content="Arturo Ruiz">
-  <title>Iniciar Sesion - Prueba de Superacion</title>
+  <title>Iniciar Sesion - Prueba de Superacion | Arturo Ruiz</title>
 
   <!-- Fonts -->
   <link rel="stylesheet" href="{{ asset('admin/fonts/1.css') }}">
@@ -72,7 +72,7 @@
                     <input class="form-control" placeholder="Contraseña" name="password" type="password">
                   </div>
                 </div>
-              
+
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary my-4">Iniciar Sesion </button>
                 </div>

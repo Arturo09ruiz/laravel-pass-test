@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Plantilla Sano Jobs Para el Departamento de Autosuficiencia y Bienestar">
   <meta name="author" content="Arturo Ruiz">
-  <title>CREA | Panel Administrativo</title>
+  <title>Panel Administrativo | Prueba de Superacion | Arturo Ruiz</title>
   <!-- Favicon -->
   <!-- <link rel="icon" href="assets/img/brand/favicon.png" type="image/png"> -->
   <!-- Fonts -->
