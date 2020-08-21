@@ -21,7 +21,7 @@
 
 <body>
     @include('admin.users.navbar')
-
+    @include('admin.users.content')
 
 
 
