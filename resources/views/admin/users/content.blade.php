@@ -99,48 +99,7 @@
                         <th scope="col" class="sort" data-sort="status">Acciones</th>
                       </tr>
                     </thead>
-                    <tbody class="list">
-                        @foreach ($users as $user )
-
-                      <tr>
-                        <th scope="row">
-                          <div class="media align-items-center">
-                            <div class="media-body">
-                              <span class="name mb-0 text-sm">{{$user->id}}</span>
-                            </div>
-                          </div>
-                        </th>
-                        <td class="budget">
-                            {{$user->name}}
-                        </td>
-                        <td class="budget">
-                            {{$user->status}}
-                        </td><td class="budget">
-                            {{$user->email}}
-                        </td>
-                        <td>
-                          <span class="badge badge-dot mr-4">
-                            <span class="status"> {{$user->created_at}}</span>
-                          </span>
-                        </td>
-                        <td>
-                            <span class="badge badge-dot mr-4">
-                              <span class="status">
-                                  <form method="POST" action="">
-                                    @csrf
-                                    @method('DELETE')
-                                      <button class="btn btn-danger">Eliminar</button>
-                                  </form>
-                              </span>
-                            </span>
-                          </td>
-                      </tr>
-                      @endforeach
-
-
-
-
-                    </tbody>
+                  
                   </table>
                 </div>
                 <!-- Card footer -->

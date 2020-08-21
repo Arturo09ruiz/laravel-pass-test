@@ -50,10 +50,28 @@
     <script src="{{ asset('admin/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('admin/vendor/maskedinput/maskedinput.js') }}"></script>
 
+
     <script>
         $(document).ready(function() {
-            $('#users').DataTable();
+          $table =  $('#users').DataTable({
+                "serverSide": true,
+                "ajax" : "{{url('api/users')}}",
+                "columns":[
+                    {data: 'id'},
+                    {data: 'name'},
+                    {data: 'status'},
+                    {data: 'email'},
+                    {data: 'created_at'},
+                    {data: 'btn'},
+                ]
+            });
         } );
+
+
+
+
     </script>
+
+
 </body>
 </html>
