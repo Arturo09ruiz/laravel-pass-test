@@ -25,3 +25,6 @@ Route::get('users', function () {
 
 
 Route::any('delete', 'Admin\UsersController@destroy');
+
+Route::any('change-status', 'Admin\UsersController@change');
+

@@ -85,4 +85,24 @@ class UsersController extends Controller
         $user = User::find($request->id)->delete();
 
     }
+
+    public function change (Request $request)
+    {
+        $user = User::find($request->id);
+
+       if ($user->status === 'Disabled') {
+
+           $statuss = 'Active';
+           $user->status = $statuss;
+           $user->save();
+
+       } else {
+            $statuss = 'Disabled';
+            $user->status = $statuss;
+            $user->save();
+       }
+       ;
+
+    }
 }
+
