@@ -18,3 +18,5 @@ Route::redirect('/', 'inicio-de-sesion', 301);
 
 Route::get('inicio-de-sesion', 'Web\LoginController@index')->name('login-sesion');
 
+Route::get('panel-administrativo', 'Admin\IndexController@index')->name('admin-panel');
+
