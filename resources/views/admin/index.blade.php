@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Plantilla Sano Jobs Para el Departamento de Autosuficiencia y Bienestar">
+  <meta name="description" content="Prueba de Superacion">
   <meta name="author" content="Arturo Ruiz">
   <title>Panel Administrativo | Prueba de Superacion | Arturo Ruiz</title>
   <!-- Favicon -->
