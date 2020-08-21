@@ -20,4 +20,4 @@ Route::get('inicio-de-sesion', 'Web\LoginController@index')->name('login-sesion'
 
 Route::get('panel-administrativo', 'Admin\IndexController@index')->name('admin-panel');
 
-Route::resource('usuarios', 'Admin\UsersController')->name('users');
+Route::resource('usuarios', 'Admin\UsersController');

@@ -13,14 +13,14 @@
           <ul class="navbar-nav">
 
             <li class="nav-item">
-              <a class="nav-link active" ">
+              <a class="nav-link active" href="#">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Panel de Control</span>
               </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{route('usuarios.index')}}">
                   <i class="fa fa-user"></i>
                   <span class="nav-link-text">Usuarios</span>
                 </a>
