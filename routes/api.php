@@ -18,7 +18,8 @@ Route::get('users', function () {
     return datatables()
     ->eloquent(App\User::query())
     ->addColumn('btn', 'admin.users.actions')
-    ->rawColumns(['btn'])
+    ->addColumn('btn-status', 'admin.users.status')
+    ->rawColumns(['btn', 'btn-status'])
     ->toJson();
 });
 

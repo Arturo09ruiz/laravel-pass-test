@@ -86,7 +86,7 @@
                 "columns":[
                     {data: 'id'},
                     {data: 'name'},
-                    {data: 'status'},
+                    {data: 'btn-status'},
                     {data: 'email'},
                     {data: 'btn'},
                 ]
