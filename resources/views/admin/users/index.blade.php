@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    @include('name')
+    @include('admin.users.navbar')
 
 
 
