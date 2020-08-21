@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', 'inicio-de-sesion', 301);
 
 Route::get('inicio-de-sesion', 'Web\LoginController@index')->name('login');
