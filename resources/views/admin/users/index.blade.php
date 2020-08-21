@@ -88,7 +88,6 @@
                     {data: 'name'},
                     {data: 'status'},
                     {data: 'email'},
-                    {data: 'created_at'},
                     {data: 'btn'},
                 ]
 

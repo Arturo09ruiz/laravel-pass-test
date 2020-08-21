@@ -95,11 +95,10 @@
                         <th scope="col" class="sort" data-sort="budget">Nombre</th>
                         <th scope="col" class="sort" data-sort="budget">Status</th>
                         <th scope="col" class="sort" data-sort="budget">Email</th>
-                        <th scope="col" class="sort" data-sort="status">Fecha</th>
                         <th scope="col" class="sort" data-sort="status">Acciones</th>
                       </tr>
                     </thead>
-                  
+
                   </table>
                 </div>
                 <!-- Card footer -->
