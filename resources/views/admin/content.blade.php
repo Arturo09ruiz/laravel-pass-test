@@ -20,9 +20,7 @@
             <li class="nav-item dropdown">
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
-                  <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Imagen de Perfil" src="">
-                  </span>
+                    
                   <div class="media-body  ml-2  d-none d-lg-block">
                     <span class="mb-0 text-sm  font-weight-bold">{{auth()->user()->name }}</span>
                   </div>
@@ -32,10 +30,7 @@
                 <div class="dropdown-header noti-title">
                   <h6 class="text-overflow m-0">Bienvenido!</h6>
                 </div>
-                <a href="#" class="dropdown-item">
-                  <i class="ni ni-single-02"></i>
-                  <span>Mi Perfil</span>
-                </a>
+
                 <a href="#!" class="dropdown-item">
                   <i class="fa fa-headset"></i>
                   <span>Soporte Técnico</span>
@@ -139,16 +134,13 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2020 <a href="#" class="font-weight-bold ml-1" target="_blank">Arturo Ruiz & Henry Silva</a>
+              &copy; 2020 <a href="#" class="font-weight-bold ml-1" target="_blank">Arturo Ruiz</a>
             </div>
           </div>
           <div class="col-lg-6">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
               <li class="nav-item">
                 <a href="#" class="nav-link" target="_blank">Arturo Ruiz</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link" target="_blank">Henry Silva</a>
               </li>
 
               <li class="nav-item">
