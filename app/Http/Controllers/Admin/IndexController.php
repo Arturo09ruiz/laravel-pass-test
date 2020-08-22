@@ -5,10 +5,14 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
+
 
 class IndexController extends Controller
 {
     public function index(){
+
+      
         $users = User::all()->count();
 
         $enero = User::where('created_at', 'LIKE', "%2020-01%")->get()->count();
@@ -26,5 +30,7 @@ class IndexController extends Controller
 
 
         return view('admin.index', compact('users', 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'));
+
+
     }
 }
