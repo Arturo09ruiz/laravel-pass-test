@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+
 use App\User;
 
 class UsersController extends Controller
@@ -37,7 +39,16 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $user = new User;
+
+        $user->name  =  $request->name;
+        $user->email  =  $request->email;
+        $user->password  = Hash::make($request->password);
+        $user->status = $request->status;
+
+        $user->save();
+
     }
 
     /**

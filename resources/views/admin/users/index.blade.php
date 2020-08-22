@@ -18,13 +18,25 @@
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="{{ asset('admin/css/1.css') }}" type="text/css">
+
+  <style>
+      .info-validation{
+        text-align: center;
+        display: none;
+      }
+      .info-validation-show{
+        text-align: center;
+        display: block !important;
+        font-size: 15px;
+      }
+  </style>
 </head>
 
 <body>
 
     @include('admin.users.navbar')
     @include('admin.users.content')
-
+    @include('admin.users.modal')
 
 
 
@@ -97,6 +109,42 @@
 
 
 
+
+        $(".save").unbind().click(function() {
+
+            var name = $(".name").val();
+            var email = $(".email").val();
+            var password = $(".password").val();
+            var status = $(".status").val();
+
+            if(name, email, password, status){
+                $.ajax({
+                    url: "{{url('api/register')}}",
+                    type: "POST",
+                    data:{
+                    name: name,
+                    email: email,
+                    password: password,
+                    status: status,
+                    _token:'{{ csrf_token() }}'
+                    },
+                    cache: false,
+                    dataType: 'json',
+                    success: function(dataResult){
+
+                    }
+                });
+                
+             $('#registrar_user').modal('toggle');
+             $table.ajax.reload(null, false );
+
+            }else{
+                document.getElementById('text_validation').className = 'info-validation-show';
+            }
+
+
+
+        });
     </script>
 
 

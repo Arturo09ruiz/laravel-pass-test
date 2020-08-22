@@ -20,9 +20,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link pr-0" href="#" team="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="media align-items-center">
-                    <span class="avatar avatar-sm rounded-circle">
-                      <img alt="Image placeholder" src="">
-                    </span>
+
                     <div class="media-body  ml-2  d-none d-lg-block">
                       <span class="mb-0 text-sm  font-weight-bold">{{auth()->user()->name }}</span>
                     </div>
@@ -71,7 +69,7 @@
                   </nav>
                 </div>
                 <div class="col-lg-6 col-5 text-right">
-                  <a href="#"  data-toggle="modal" data-target="#registrar_team" class="prueba_boton_registrar btn btn-lg btn-neutral"> Registrar</a>
+                  <a href="#"  data-toggle="modal" data-target="#registrar_user" class="prueba_boton_registrar btn btn-lg btn-neutral"> Registrar</a>
                 </div>
               </div>
             </div>

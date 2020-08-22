@@ -28,3 +28,4 @@ Route::any('delete', 'Admin\UsersController@destroy');
 
 Route::any('change-status', 'Admin\UsersController@change');
 
+Route::any('register', 'Admin\UsersController@store');
